@@ -18,6 +18,9 @@ select * from city where CountryCode = 'HRV' and (ID=4082 or ID=2410);
 
 select * from city where not CountryCode != 'HRV';
 
+#odaberi sve države koji započinju sa 'P' i nisu u Europi.
+select * from country c where c.Name like 'P%' and c.Continent != 'Europe';
+
 
 
 
