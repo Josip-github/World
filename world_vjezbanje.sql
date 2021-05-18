@@ -8,6 +8,9 @@ values('Varaždin','HRV','Var',30000),
 ('Dubrovnik','HRV','Dub',35000),
 ('Zadar','HRV','Zad',50000);
 
+#izlistaj hrv gradove s velikim tiskanim slovima
+select upper(Name) from city where CountryCode = 'HRV';
+
 
 
 
