@@ -11,6 +11,14 @@ values('Varaždin','HRV','Var',30000),
 #izlistaj hrv gradove s velikim tiskanim slovima
 select upper(Name) from city where CountryCode = 'HRV';
 
+#and, or i not
+select * from city where CountryCode = 'HRV' and ID<4082 and ID>2410;
+
+select * from city where CountryCode = 'HRV' and (ID=4082 or ID=2410);
+
+select * from city where not CountryCode != 'HRV';
+
+
 
 
 
